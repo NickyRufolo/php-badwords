@@ -1,7 +1,7 @@
 <!-- Creo una variabile -->
 <?php
 
-$variabile = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+$paragrafo = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
 Officia quasi a illo asperiores obcaecati minus, numquam fugit. 
 Doloribus porro libero, placeat molestias voluptates hic excepturi 
 distinctio earum incidunt tempore ducimus.Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -18,7 +18,7 @@ Officia quasi a illo asperiores obcaecati minus, numquam fugit.
 Doloribus porro libero, placeat molestias voluptates hic excepturi 
 distinctio earum incidunt tempore ducimus.";
 //modifico la variabile con il GET ricevuto nell'URL
-$variabileModificata = str_replace($_GET["name"], "***", $variabile);
+$paragrafoModificato = str_replace($_GET["name"], "***", $variabile);
 // str_replace(porzioneDaModificare, conCosa, stringa) - sostituisce una porzione di una stringa con un nuovo valore
 
 ?>
@@ -33,13 +33,13 @@ $variabileModificata = str_replace($_GET["name"], "***", $variabile);
 <body>
 
     <!-- stampo la variabile -->
-    <h1>bisciù in napoletano deriva da: <?php echo $variabile?> </h1>
+    <h1>bisciù in napoletano deriva da: <?php echo $paragrafo?> </h1>
     <!-- stampo la lunghezza della variabile -->
-    <h1>La lunghezza della variabile è <?php echo strlen($variabile) ?></h1>
+    <h1>La lunghezza della variabile è <?php echo strlen($paragrafo) ?></h1>
     <!-- stampo il paragrafo modificato -->
-    <h2>Il paragrafo modificato è <?php echo $variabileModificata ?></h2>
+    <h2>Il paragrafo modificato è <?php echo $paragrafoModificato ?></h2>
     <!-- stampo la lunghezza del paragrafo -->
-    <h1>La lunghezza del paragarfo è <?php echo strlen($variabileModificata) ?></h1>
+    <h1>La lunghezza del paragarfo è <?php echo strlen($paragrafoModificato) ?></h1>
     
 </body>
 </html>
